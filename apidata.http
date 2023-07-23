@@ -1,0 +1,13 @@
+GET http://localhost:3000/initialize_database
+
+###
+GET http://localhost:3000/statistics?month=07
+
+###
+GET http://localhost:3000/bar-chart?month=03
+
+###
+GET http://localhost:3000/pie-chart?month=07
+
+####
+GET http://localhost:3000/combined-data?month=07
