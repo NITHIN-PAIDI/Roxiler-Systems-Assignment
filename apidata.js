@@ -6,7 +6,8 @@ const PORT = 3000;
 
 app.use(express.json());
 const db = new sqlite3.Database("products.db");
-
+//statistics
+//API 1
 app.get("/statistics", (req, res) => {
   const { month } = req.query;
   console.log(month);
@@ -162,6 +163,8 @@ app.get("/pie-chart", async (req, res) => {
     res.json(pieChartData);
   });
 });
+
+//Combined data
 
 // Define the URLs of the three APIs
 const statisticsAPI = "http://localhost:3000/statistics";

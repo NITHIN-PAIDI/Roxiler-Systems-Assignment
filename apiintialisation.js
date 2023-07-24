@@ -88,7 +88,7 @@ app.get("/initialize_database", async (req, res) => {
   try {
     const data = await fetchDataFromAPI();
     await initializeDatabase(data);
-    res.json({ message: "Database initialized with seed data!" });
+    res.json({ message: "Database initialized successfully" });
   } catch (error) {
     res
       .status(500)

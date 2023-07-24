@@ -1,13 +1,18 @@
+// API intialisation creating database with seed data
 GET http://localhost:3000/initialize_database
 
+// Stastics
 ###
-GET http://localhost:3000/statistics?month=07
+GET http://localhost:3000/statistics?month=08
 
+// bar-chart API
 ###
-GET http://localhost:3000/bar-chart?month=03
+GET http://localhost:3000/bar-chart?month=01
 
+// Pie-chart API
 ###
-GET http://localhost:3000/pie-chart?month=07
+GET http://localhost:3000/pie-chart?month=09
 
+// Combined data of statastics and bar-chart and piechart
 ####
 GET http://localhost:3000/combined-data?month=07
